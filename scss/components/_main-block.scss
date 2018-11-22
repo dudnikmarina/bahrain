@@ -1,0 +1,4600 @@
+.main-block {
+	position: relative;
+	z-index: 1;
+
+	&:after,
+	&:before {
+		position: absolute;
+		content: '';
+		height: 0;
+		width: 0;
+		top: 0;
+		border-style: solid;
+		border-color: $dark-green transparent transparent transparent;
+		z-index: -1;
+	}
+
+	&:after {
+		left: 0;
+		border-width: 305px 220px 0 0;
+
+		@include media('>=phone') {
+			border-width: 555px 270px 0 0;
+		}
+
+		@include media('>=xs-tablet') {
+			border-width: 755px 360px 0 0;
+		}
+
+		@include media('>=desktop') {
+			border-width: 755px 600px 0 0;
+		}
+
+		@include media('>=widescreen') {
+			border-width: 1350px 550px 0 0;
+		}
+
+		@include media('>=lg-widescreen') {
+			border-width: 755px 1000px 0 0;
+		}
+	}
+
+	&:before {
+		right: 0;
+		border-width: 360px 0 0 80px;
+
+		@include media('>=phone') {
+			border-width: 670px 0 0 220px;
+		}
+
+		@include media('>=xs-tablet') {
+			border-width: 973px 0 0 448px;
+		}
+
+		@include media('>=desktop') {
+			border-width: 973px 0 0 400px;
+		}
+
+		@include media('>=widescreen') {
+			border-width: 1745px 0 0 803px;
+		}
+	}
+
+	&.main-usa {
+		color: $dark-blue;
+		background: $red;
+
+		.image-map {
+			&.image-map-top {
+				width: 260px;
+				height: 160px;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-usa.svg) no-repeat top;
+				background-size: 260px 160px;
+
+				@include media('>=phone') {
+					width: 55.52vw;
+					height: 31.67vw;
+					top: -3%;
+					right: 0;
+					left: auto;
+					background-size: 55.52vw 31.67vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 805px;
+					height: 826px;
+					top: -353px;
+					background-size: 805px 826px;
+				}
+			}
+		}
+
+		.ico-text {
+			top: 10%;
+		}
+
+		.item {
+			&:nth-child(10) {
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 21.12vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 306px;
+					}
+				}
+			}
+		}
+
+		.logos-list {
+			img {
+				min-height: 27px;
+
+				@include media('>=phone') {
+					min-height: 3.35vw;
+				}
+
+				@include media('>=widescreen') {
+					min-height: 49px;
+				}
+			}
+		}
+
+		#footer {
+			color: $white;
+		}
+	}
+
+	&.main-uk {
+		color: $dark-blue;
+		background: $red;
+
+		.image-map {
+			&.image-map-top {
+				width: 150px;
+				height: 175px;
+				top: -77px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-uk.svg) no-repeat top;
+				background-size: 150px 175px;
+
+				@include media('>=phone') {
+					width: 37.16vw;
+					height: 44.24vw;
+					top: -5.5%;
+					right: 14%;
+					left: auto;
+					background-size: 37.16vw 44.24vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 509px;
+					height: 612px;
+					background-size: 509px 612px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: 85px;
+					}
+				}
+			}
+		}
+
+		.ico-text {
+			color: $white;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 35px;
+
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(3) {
+				.ico-holder {
+					@include media('<phone') {
+						top: 55px;
+						bottom: auto;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+
+				@include media('>=phone') {
+					top: 38.5%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 45.1%;
+					left: 0%;
+				}
+
+				.ico-holder {
+
+					img {
+						@include media('>=phone') {
+							width: 19vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 275px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				padding: 0 0 60px;
+
+				@include media('>=phone') {
+					top: 42.3%;
+					right: 3%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						bottom: -9.44vw;
+						left: -13.91vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -137px;
+						left: -202px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 15.28vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 221px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				padding-top: 95px;
+
+				@include media('>=phone') {
+					top: 52.1%;
+					right: 31%;
+					padding: 0;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						flex-direction: column;
+					}
+				}
+
+				.ico-holder {
+					@include media('<phone') {
+						position: absolute;
+						top: -110px;
+						right: -100px;
+						padding: 0;
+					}
+
+					img {
+						width: 200px;
+
+						@include media('>=phone') {
+							width: 24.84vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 360px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				padding-bottom: 80px;
+				padding-top: 100px;
+
+				@include media('>=phone') {
+					left: 24%;
+					padding: 0;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('<phone') {
+						position: absolute;
+						right: -105px;
+						top: -100px;
+					}
+
+
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -13.66vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -198px;
+					}
+
+					img {
+						width: 120px;
+
+						@include media('>=phone') {
+							width: 14.91vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 216px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(15) {
+				@include media('>=phone') {
+					top: 62.4%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					right: 48%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.88vw;
+						left: auto;
+						right: -13.29vw;
+
+					}
+
+					@include media('>=widescreen') {
+						top: -274px;
+						right: -180px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 74.8%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 13.29vw;
+						left: -24.22vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 192px;
+						left: -351px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+					right: 23%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 89.2%;
+				}
+			}
+		}
+
+		#footer {
+			color: $white;
+		}
+	}
+
+	&.main-uae {
+		color: #368588;
+		background: $dark-gray;
+
+		&:after,
+		&:before {
+			border-color: $green transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $green transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $green transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 200px;
+				height: 140px;
+				top: -78px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-uae.svg) no-repeat top;
+				background-size: 200px 140px;
+
+				@include media('>=phone') {
+					width: 49.67vw;
+					height: 35.78vw;
+					top: -5.5%;
+					right: 10%;
+					left: auto;
+					background: url(../images/img-map-uae.svg) no-repeat top;
+					background-size: 49.67vw 35.78vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 720px;
+					height: 518px;
+					background-size: 720px 518px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 20px;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+			}
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 34px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 3%;
+					right: 0;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 11.18vw;
+						left: -36.52vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 162px;
+						left: -529px;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 39%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					left: 1%;
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 40.5%;
+					right: 9%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						flex-direction: column;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						padding: 0 0 2.48vw;
+					}
+
+					@include media('>=widescreen') {
+						padding: 0 0 36px;
+					}
+				}
+
+				.ico-holder {
+					img {
+						width: 120px;
+
+						@include media('>=phone') {
+							width: 25.71vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 372px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 52.7%;
+					right: 0;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						padding: 1.86vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						padding: 27px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.7%;
+					left: 34%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.51vw;
+						right: -12.55vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -268px;
+						right: -182px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				padding-bottom: 25px;
+
+				@include media('>=phone') {
+					top: 73.2%;
+					padding: 0;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: 50%;
+						left: -23.6vw;
+						transform: translateY(-75%);
+					}
+
+					@include media('>=widescreen') {
+						left: -342px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+					right: 23%;
+				}
+
+				.item-holder {
+					@include media('<phone') {
+						width: 65%;
+					}
+				}
+
+				.text-box {
+					@include media('<phone') {
+						width: auto;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		#footer {
+			color: $white;
+
+			a {
+				color: inherit;
+			}
+		}
+	}
+
+	&.main-turkey {
+		color: $red;
+		background: $white;
+
+		&:after,
+		&:before {
+			border-color: $dark-red transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $red transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $red transparent;
+			}
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 65px;
+					background: url(../images/img-bg-04.svg) 50% top;
+				}
+			}
+		}
+
+		.title-holder {
+			color: inherit;
+		}
+
+		.subtitle-holder {
+			color: inherit;
+		}
+
+		.text-holder {
+			color: $red;
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 220px;
+				height: 100px;
+				top: -10px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-turkey.svg) no-repeat top;
+				background-size: 220px 100px;
+
+				@include media('>=phone') {
+					width: 63.98vw;
+					height: 28vw;
+					top: -3%;
+					right: -6%;
+					left: auto;
+					background-size: 63.98vw 28vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 927px;
+					height: 405px;
+					background-size: 927px 405px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 20px;
+						border-color: $dark-green;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $dark-green;
+					}
+				}
+			}
+		}
+
+		.text-box {
+			&.bg-light {
+				&:before {
+					background: url(../images/img-style-04.png) repeat-y 0 0 / 3px, url(../images/img-style-03.png) repeat-x 0 0 / 8px;
+				}
+
+				&:after {
+					background: url(../images/img-style-04.png) repeat-y top right / 3px, url(../images/img-style-03.png) repeat-x bottom right / 8px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 4.5%;
+					right: 7%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 6.21vw;
+						left: -29.81vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 90px;
+						left: -432px;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				@include media('>=phone') {
+					top: 12.5%;
+				}
+
+				.text-box {
+					@include media('>=phone') {
+						max-width: 44.47vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 644px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.35vw;
+						right: -33.29vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 49px;
+						right: -482px;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.5%;
+					left: 1%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 19.13vw;
+						padding: 0 1.74vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 277px;
+						padding: 0 25px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 40.7%;
+					right: 4%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 18.63vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 270px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						bottom: -13.66vw;
+						left: -17.02vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -198px;
+						left: -250px;
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					right: 0;
+				}
+
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 19.25vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 279px;
+						}
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 25.22vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 365px;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					left: 24%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 24.84vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 360px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -15.78vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -229px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 19.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 284px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(15) {
+				@include media('>=phone') {
+					top: 62%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 72.5%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 91.3%;
+				}
+			}
+		}
+
+		#footer {
+			color: $dark-red;
+		}
+	}
+
+	&.main-south-korea {
+		color: $red;
+		background: $white;
+
+		&:after,
+		&:before {
+			border-color: $dark-red transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $red transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $red transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 160px;
+				height: 240px;
+				top: -125px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-south-korea.svg) no-repeat top;
+				background-size: 160px 240px;
+
+				@include media('>=phone') {
+					width: 31.43vw;
+					height: 47.83vw;
+					top: -7%;
+					right: 12.5%;
+					left: auto;
+					background-size: 31.43vw 47.83vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 455px;
+					height: 693px;
+					background-size: 455px 693px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 45px;
+						border-color: $blue;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $blue;
+					}
+				}
+			}
+		}
+
+		.title-holder {
+			color: $blue;
+		}
+
+		.subtitle-holder {
+			color: $blue;
+		}
+
+		.text-holder {
+			color: $red;
+		}
+
+		.ico-text {
+			top: 11%;
+		}
+
+		.text-box {
+			&.bg-blue {
+				&:before {
+					background: url(../images/img-style-04.png) repeat-y 0 0 / 3px, url(../images/img-style-03.png) repeat-x 0 0 / 8px;
+				}
+
+				&:after {
+					background: url(../images/img-style-04.png) repeat-y top right / 3px, url(../images/img-style-03.png) repeat-x bottom right / 8px;
+				}
+			}
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 65px;
+					background: url(../images/img-bg-06.svg) 50% top;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 4%;
+					right: 6%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 8.07vw;
+						left: -30.68vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 117px;
+						left: -445px;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				@include media('>=phone') {
+					top: 12.5%;
+				}
+
+				.text-box {
+					@include media('>=phone') {
+						max-width: 44.47vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 644px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.35vw;
+						right: -33.29vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 49px;
+						right: -482px;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38.3%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.5%;
+					left: 1%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 19.13vw;
+						padding: 0 1.74vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 277px;
+						padding: 0 25px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 40.3%;
+					right: 8%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 18.63vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 270px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						bottom: -17.01vw;
+						left: -12.05vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -241px;
+						left: -175px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 16.15vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 234px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 51.8%;
+					right: 0;
+				}
+
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 14.04vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 203px;
+						}
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 29.2vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 423px;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					left: 24%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 24.84vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 360px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -15.78vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -229px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 19.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 284px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(15) {
+				@include media('>=phone') {
+					top: 62%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -107px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 73.8%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-77%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 91.3%;
+				}
+			}
+		}
+
+		#footer {
+			color: $dark-red;
+		}
+	}
+
+	&.main-singapore {
+		color: $white;
+		background: $red;
+
+		&:after,
+		&:before {
+			border-color: $gray transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $gray transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $gray transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 260px;
+				height: 155px;
+				top: -40px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-singapore.svg) no-repeat top;
+				background-size: 260px 155px;
+
+				@include media('>=phone') {
+					width: 70vw;
+					height: 36vw;
+					top: -3.8%;
+					right: -7%;
+					left: auto;
+					background-size: 71.04vw 37.51vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 1044px;
+					height: 558px;
+					background-size: 1044px 558px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 45px;
+						border-color: $gray;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-03.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-03.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $gray;
+					}
+				}
+			}
+		}
+
+		.subtitle-holder {
+			color: $dark-red;
+		}
+
+		.ico-text {
+			top: 11%;
+		}
+
+		.text-box {
+			&.bg-light {
+				color: $red;
+
+				&:before {
+					background: url(../images/img-style-04.png) repeat-y 0 0 / 3px, url(../images/img-style-03.png) repeat-x 0 0 / 8px;
+				}
+
+				&:after {
+					background: url(../images/img-style-04.png) repeat-y top right / 3px, url(../images/img-style-03.png) repeat-x bottom right / 8px;
+				}
+			}
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 65px;
+					background: url(../images/img-bg-08.svg) 50% top;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(3) {
+				@include media('>=phone') {
+					top: 12.5%;
+				}
+
+				.text-box {
+					@include media('>=phone') {
+						max-width: 44.47vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 644px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.35vw;
+						right: -33.29vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 49px;
+						right: -482px;
+					}
+				}
+			}
+
+			&:nth-child(5) {
+				@include media('>=phone') {
+					left: 31%;
+				}
+			}
+
+			&:nth-child(6) {
+				@include media('>=phone') {
+					top: 30%;
+					right: 9%;
+				}
+			}
+
+			&:nth-child(7) {
+				@include media('>=phone') {
+					top: 35%;
+					left: 9%;
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38.3%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.5%;
+					left: 1%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 19.13vw;
+						padding: 0 1.74vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 277px;
+						padding: 0 25px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 42.5%;
+					right: 6%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 20,5vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 297px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						bottom: -9.69vw;
+						left: -17.64vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -140px;
+						left: -256px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 16.15vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 234px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 50.5%;
+					left: 43%;
+					right: auto;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 15.53vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 225px;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					top: 62.5%;
+					left: 19%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -15.78vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -229px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 19.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 284px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(14) {
+				@include media('>=phone') {
+					top: 66%;
+				}
+			}
+
+			&:nth-child(15) {
+				@include media('>=phone') {
+					top: 62%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 73.8%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-77%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 91.3%;
+				}
+			}
+		}
+
+		#footer {
+			color: $dark-red;
+		}
+	}
+
+	&.main-saudi {
+		color: $white;
+		background: $green;
+
+		.image-map {
+			&.image-map-top {
+				width: 200px;
+				height: 140px;
+				top: -78px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-saudi.svg) no-repeat top;
+				background-size: 200px 140px;
+
+				@include media('>=phone') {
+					width: 49.67vw;
+					height: 35.78vw;
+					top: -5.5%;
+					right: 10%;
+					left: auto;
+					background: url(../images/img-map-saudi.svg) no-repeat top;
+					background-size: 49.67vw 35.78vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 720px;
+					height: 518px;
+					background-size: 720px 518px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 20px;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-04.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-04.svg) no-repeat bottom;
+				}
+			}
+		}
+
+		.ico-text {
+			top: 8%;
+			color: $dark-green;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 37px;
+				}
+			}
+
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 3%;
+					right: 0%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 11.18vw;
+						left: -36.65vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 162px;
+						left: -531px;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				.ico-holder {
+					@include media('<phone') {
+						top: 50%;
+						right: -110px;
+						bottom: auto;
+						transform: translateY(-50%);
+					}
+				}
+			}
+
+			&:nth-child(4) {
+				.text-box {
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.7%;
+					left: 1%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: flex-start;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						padding-top: 3.73vw;
+					}
+
+					@include media('>=widescreen') {
+						padding-top: 54px;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 43.6%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: -1.49vw;
+						left: -17.02vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -22px;
+						left: -247px;
+					}
+
+					img {
+						width: 140px;
+
+						@include media('>=phone') {
+							width: 22.86vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 331px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 52.7%;
+					right: 1%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: -6.58vw;
+						left: -9.07vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -95px;
+						left: -131px;
+					}
+
+					img {
+						width: 100px;
+
+						@include media('>=phone') {
+							width: 10.06vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 146px;
+						}
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 29.19vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 423px;
+					}
+				}
+			}
+
+			&:nth-child(12) {
+				.text-box {
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 18.88vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 274px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 73%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-77%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 90.5%;
+				}
+			}
+		}
+
+		.logos-list {
+			@include media('>=phone') {
+				margin: 0 -3.5vw;
+			}
+
+			@include media('>=widescreen') {
+				margin: 0 -45px;
+			}
+
+			li {
+				@include media('>=phone') {
+					padding: 0 3.5vw 1.86vw;
+				}
+
+				@include media('>=widescreen') {
+					padding: 0 45px 27px;
+				}
+			}
+
+			a {
+
+				&:hover {
+					opacity: .7;
+				}
+			}
+		}
+	}
+
+	&.main-malaysia {
+		color: $dark-blue;
+		background: $dark-blue;
+
+		&:after,
+		&:before {
+			border-color: $white transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $yellow transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $yellow transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 280px;
+				height: 90px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-malaysia.svg) no-repeat top;
+				background-size: 280px 80px;
+
+				@include media('>=phone') {
+					width: 64.35vw;
+					height: 21.86vw;
+					top: -3.5%;
+					right: 3%;
+					left: auto;
+					background: url(../images/img-map-malaysia.svg) no-repeat top;
+					background-size: 64.35vw 21.86vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 932px;
+					height: 317px;
+					background-size: 932px 317px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: -10px;
+						border-color: $yellow;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $yellow;
+					}
+				}
+			}
+		}
+
+		.title-holder {
+			color: $red;
+		}
+
+		.subtitle-holder {
+			color: $red;
+		}
+
+		.ico-text {
+			top: 10%;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					background: url(../images/img-bg-10.svg) 50% top;
+					top: 93px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 3%;
+					right: 0%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 11.18vw;
+						left: -36.65vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 162px;
+						left: -531px;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				.ico-holder {
+					@include media('<phone') {
+						top: 50%;
+						right: -110px;
+						bottom: auto;
+						transform: translateY(-50%);
+					}
+				}
+			}
+
+			&:nth-child(4) {
+				.text-box {
+					background: #d4d8d8;
+
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.7%;
+					left: 1%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: flex-start;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						padding-top: 3.73vw;
+					}
+
+					@include media('>=widescreen') {
+						padding-top: 54px;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 43.6%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: -1.49vw;
+						left: -17.02vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -22px;
+						left: -247px;
+					}
+
+					img {
+						width: 140px;
+
+						@include media('>=phone') {
+							width: 22.86vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 331px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 52.4%;
+					right: 0;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: -3.73vw;
+						left: -12.67vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -54px;
+						left: -184px;
+					}
+
+					img {
+						width: 120px;
+
+						@include media('>=phone') {
+							width: 16.15vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 234px;
+						}
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 29.19vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 423px;
+					}
+				}
+			}
+
+			&:nth-child(12) {
+				.text-box {
+					background: #d4d8d8;
+
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 18.88vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 274px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 72%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-77%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 92%;
+				}
+			}
+		}
+
+		.logos-list {
+			@include media('>=phone') {
+				margin: 0 -3.5vw;
+			}
+
+			@include media('>=widescreen') {
+				margin: 0 -8px;
+			}
+
+			li {
+				@include media('>=phone') {
+					padding: 0 3.5vw 1.86vw;
+				}
+
+				@include media('>=widescreen') {
+					padding: 0 18px 27px;
+				}
+			}
+
+			a {
+
+				&:hover {
+					opacity: .7;
+				}
+			}
+		}
+
+		#footer {
+			color: $white;
+		}
+	}
+
+	&.main-japan {
+		color: $red;
+		background: $white;
+
+		&:after,
+		&:before {
+			border-color: $dark-red transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $red transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $red transparent;
+			}
+		}
+
+		.title-holder {
+			color: inherit;
+		}
+
+		.subtitle-holder {
+			color: inherit;
+		}
+
+		.text-holder {
+			color: $red;
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 163px;
+				height: 167px;
+				top: -77px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-japan.svg) no-repeat top;
+				background-size: 163px 167px;
+
+				@include media('>=phone') {
+					width: 40.62vw;
+					height: 41.49vw;
+					top: -5.5%;
+					right: 11%;
+					left: auto;
+					background-size: 40.62vw 41.49vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 589px;
+					height: 601px;
+					background-size: 589px 601px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 45px;
+						border-color: $gray;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $gray;
+					}
+				}
+			}
+		}
+
+		.text-box {
+			&.bg-light {
+				&:before {
+					background: url(../images/img-style-04.png) repeat-y 0 0 / 3px, url(../images/img-style-03.png) repeat-x 0 0 / 8px;
+				}
+
+				&:after {
+					background: url(../images/img-style-04.png) repeat-y top right / 3px, url(../images/img-style-03.png) repeat-x bottom right / 8px;
+				}
+			}
+		}
+
+		.ico-text {
+			top: 10%;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 39px;
+					background: url(../images/img-bg-08.svg) 50% top;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 4%;
+					right: 6%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 8.07vw;
+						left: -30.68vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 117px;
+						left: -445px;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				@include media('>=phone') {
+					top: 12.5%;
+				}
+
+				.text-box {
+					@include media('>=phone') {
+						max-width: 44.47vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 644px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.35vw;
+						right: -33.29vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 49px;
+						right: -482px;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38.3%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 46%;
+					left: 1%;
+				}
+
+				.item-holder {
+					flex-direction: column;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 19.13vw;
+						padding: 0 1.74vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 277px;
+						padding: 0 25px 0 0;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						right: -14.53vw;
+						top: -5.59vw;
+					}
+
+					@include media('>=widescreen') {
+						right: -211px;
+						top: -81px;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 40.3%;
+					right: 8%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 18.63vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 270px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						bottom: -17.01vw;
+						left: -12.05vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -241px;
+						left: -175px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 16.15vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 234px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 51.8%;
+					right: 0;
+				}
+
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 14.04vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 203px;
+						}
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 29.2vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 423px;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					left: 24%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 24.84vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 360px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -15.78vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -229px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 19.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 284px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(15) {
+				@include media('>=phone') {
+					top: 62%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 72.4%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-77%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 91.3%;
+				}
+
+				.text-box {
+					@include media('<phone') {
+						word-wrap: break-word;
+					}
+				}
+			}
+		}
+
+		#footer {
+			color: $dark-red;
+		}
+	}
+
+	&.main-italy {
+		color: #368588;
+		background: #afbcc6;
+
+		&:after,
+		&:before {
+			border-color: $green transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $green transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $green transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 160px;
+				height: 180px;
+				top: -110px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-italy.svg) no-repeat top;
+				background-size: 160px 180px;
+
+				@include media('>=phone') {
+					width: 52.79vw;
+					height: 59.62vw;
+					top: -8%;
+					right: -9.5%;
+					left: auto;
+					background-size: 52.79vw 59.62vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 765px;
+					height: 864px;
+					background-size: 765px 864px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: 84px;
+						bottom: auto;
+
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+			}
+		}
+
+		.text-holder {
+			color: $green;
+		}
+
+		.ico-text {
+			color: $red;
+			width: 83%;
+
+			.text-lg {
+				font-size: 12px;
+
+				@include media('>=phone') {
+					font-size: 2.48vw;
+				}
+
+				@include media('>=widescreen') {
+					font-size: 36px;
+				}
+			}
+		}
+
+		.subtitle-holder {
+			color: $red;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 4px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 5.3%;
+					right: 7.5%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.11vw;
+						left: -28.94vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 45px;
+						left: -419px;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38.5%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.6%;
+					left: 1%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: center;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 39.5%;
+					right: 5%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						flex-direction: column;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 22.98vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 333px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						bottom: -16.52vw;
+						left: -9.69vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -239px;
+						left: -140px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 15.65vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 227px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 51.7%;
+					right: 0;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: -2.48vw;
+						left: -17.02vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -36px;
+						left: -247px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 22.98vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 333px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					left: 24%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 24.84vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 360px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -15.78vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -229px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 19.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 284px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.7%;
+					left: 34%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.51vw;
+						right: -12.55vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -268px;
+						right: -182px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				padding-bottom: 25px;
+
+				@include media('>=phone') {
+					top: 74%;
+					padding: 0;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						position: absolute;
+						top: 50%;
+						left: -23.6vw;
+						transform: translateY(-45%);
+					}
+
+					@include media('>=widescreen') {
+						left: -342px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+					right: 23%;
+				}
+
+				.item-holder {
+					@include media('<phone') {
+						width: 65%;
+					}
+				}
+
+				.text-box {
+					@include media('<phone') {
+						width: auto;
+						margin: 0;
+					}
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 91%;
+				}
+			}
+		}
+
+		#footer {
+			color: #f8f1e2;
+
+			a {
+				color: inherit;
+			}
+		}
+	}
+
+	&.main-india {
+		color: #f8f1e2;
+		background: $green;
+
+		&:after,
+		&:before {
+			border-color: $orange transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $orange transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $orange transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 200px;
+				height: 210px;
+				top: -85px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-india.svg) no-repeat top;
+				background-size: 200px 210px;
+
+				@include media('>=phone') {
+					width: 45.47vw;
+					height: 49.44vw;
+					top: -5.5%;
+					right: 8%;
+					left: auto;
+					background-size: 45.47vw 49.44vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 644px;
+					height: 702px;
+					background-size: 644px 702px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: auto;
+						bottom: 75px;
+						border-color: $orange;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-03.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-03.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $orange;
+					}
+				}
+			}
+		}
+
+		.text-holder,
+		.text-box,
+		.title-holder,
+		.subtitle {
+			color: inherit;
+		}
+
+		.ico-text {
+			color: $dark-red
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 43px;
+					background: url(../images/img-bg-13.svg) 50% top;
+
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 4.5%;
+					right: 8%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.98vw;
+						left: -31.43vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 63px;
+						left: -455px;
+					}
+				}
+			}
+
+			&:nth-child(3) {
+				@include media('>=phone') {
+					top: 12.5%;
+				}
+
+				.text-box {
+					@include media('>=phone') {
+						max-width: 44.47vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 644px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.35vw;
+						right: -33.29vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 49px;
+						right: -482px;
+					}
+				}
+			}
+
+
+			&:nth-child(4) {
+				.text-box {
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+			}
+
+			&:nth-child(5) {
+				@include media('>=phone') {
+					left: 31%;
+				}
+			}
+
+			&:nth-child(6) {
+				@include media('>=phone') {
+					top: 30%;
+					right: 9%;
+				}
+			}
+
+			&:nth-child(7) {
+				@include media('>=phone') {
+					top: 35%;
+					left: 9%;
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38.3%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.5%;
+					left: 0;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: flex-start;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 17.39vw;
+						padding: 0 1.74vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 252px;
+						padding: 0 25px 0 0;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						margin: -3.48vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						margin: -50px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 41.5%;
+					right: 14%;
+				}
+
+				.item-holder {
+					flex-direction: column;
+
+					@include media('>=widescreen') {
+						align-items: center;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 19.13vw;
+						padding: 0 0 2.48vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 277px;
+						padding: 0 0 36px;
+					}
+				}
+
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 19.88vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 288px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 52%;
+					right: 2%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 27.08vw;
+						padding: 0 0 0 1.24vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 392px;
+						padding: 0 0 0 18px;
+					}
+				}
+			}
+
+			&:nth-child(12) {
+				.text-box {
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+
+				.item-holder {
+					flex-direction: column;
+
+					@include media('<phone') {
+						width: 100%;
+						align-items: flex-end;
+					}
+
+					@include media('>=phone') {
+						position: relative;
+					}
+				}
+
+				.text-box {
+					@include media('<phone') {
+						margin: 0 0 20px;
+					}
+				}
+
+				.text-holder {
+					width: 50%;
+					padding: 0 0 0 20px;
+
+					@include media('>=phone') {
+						padding: 0;
+						position: absolute;
+						width: auto;
+						max-width: 11.92vw;
+						top: -10vw;
+						right: -19vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 173px;
+						top: -140px;
+						right: -297px;
+					}
+				}
+			}
+
+			&:nth-child(14) {
+				@include media('>=phone') {
+					top: 64%;
+				}
+			}
+
+			&:nth-child(15) {
+				@include media('>=phone') {
+					top: 62%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 73.8%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 50%;
+						transform: translateY(-77%);
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(19) {
+				@include media('>=phone') {
+					top: 79.5%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 14.66vw;
+						right: -21.61vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 212px;
+						right: -313px;
+					}
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 92.4%;
+				}
+			}
+		}
+
+		.logos-list {
+			@include media('>=phone') {
+				margin: 0 -3vw;
+			}
+
+			@include media('>=widescreen') {
+				margin: 0 -36px;
+			}
+
+			li {
+				@include media('>=phone') {
+					padding: 0 3vw 1.86vw;
+				}
+
+				@include media('>=widescreen') {
+					padding: 0 36px 27px;
+				}
+			}
+		}
+	}
+
+	&.main-hong-kong {
+		color: $white;
+		background: #708d9f;
+
+		&:after,
+		&:before {
+			border-color: $dark-red transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $dark-red transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $dark-red transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 210px;
+				height: 150px;
+				top: -30px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-hongkong.svg) no-repeat top;
+				background-size: 210px 150px;
+
+				@include media('>=phone') {
+					width: 52.17vw;
+					height: 40.99vw;
+					top: -4.5%;
+					right: 4%;
+					left: auto;
+					background-size: 52.17vw 40.99vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 756px;
+					height: 594px;
+					background-size: 756px 594px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: 84px;
+						bottom: auto;
+
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-02.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-02.svg) no-repeat bottom;
+				}
+			}
+		}
+
+		.ico-text {
+			color: $dark-red;
+			top: 11%;
+			.text-lg {
+				font-size: 10px;
+
+				@include media('>=phone') {
+					font-size: 2.24vw;
+				}
+
+				@include media('>=widescreen') {
+					font-size: 32px;
+				}
+			}
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					top: 81px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					right: 6%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 4.72vw;
+						left: -27.82vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 68px;
+						left: -403px;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 41.5%;
+					right: 13%;
+				}
+
+				.item-holder {
+					@include media('<phone') {
+						width: 75%;
+						padding: 0;
+					}
+				}
+
+				.text-holder {
+					position: absolute;
+					color: $dark-red;
+					max-width: 100px;
+					bottom: 5px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					@include media('>=phone') {
+						max-width: 14.91vw;
+						bottom: 2.48vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 216px;
+						bottom: 36px;
+					}
+				}
+
+				.ico-holder {
+					img {
+						width: 175px;
+
+						@include media('>=phone') {
+							width: 18.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 270px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.3%;
+				}
+			}
+		}
+
+		.logos-list {
+			@include media('>=phone') {
+				margin: 0 -3.5vw;
+			}
+
+			@include media('>=widescreen') {
+				margin: 0 -36px;
+			}
+
+			li {
+				@include media('>=phone') {
+					padding: 0 3.5vw 1.86vw;
+				}
+			}
+		}
+	}
+
+	&.main-germany {
+		background: $dark-gray;
+		color: #f8f1e2;
+
+		&:after,
+		&:before {
+			border-color: $white transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $red transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $red transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 131px;
+				height: 165px;
+				top: -77px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-germany.svg) no-repeat top;
+				background-size: 131px 165px;
+
+				@include media('>=phone') {
+					width: 32.67vw;
+					height: 41.12vw;
+					right: 13%;
+					top: -5.4%;
+					left: auto;
+					background-size: 32.67vw 41.12vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 473px;
+					height: 596px;
+					background-size: 473px 596px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $yellow;
+						top: 84px;
+						bottom: auto;
+
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-05.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-05.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $red;
+						top: 19px;
+					}
+				}
+			}
+		}
+
+		.text-box,
+		.text-holder {
+			color: inherit;
+		}
+
+		.image-content {
+			@include media('>=phone') {
+				position: relative;
+			}
+
+			&:after {
+				@include media('>=phone') {
+					position: absolute;
+					content: '';
+					width: 11.18vw;
+					height: 11.18vw;
+					left: 23.73vw;
+					bottom: 0.2vw;
+					transform: translateX(-50%);
+					border-radius: 50%;
+					border: 2.1vw solid $red;
+				}
+
+				@include media('>=widescreen') {
+					border-width: 31px;
+					width: 162px;
+					height: 162px;
+					left: 345px;
+					bottom: 1px;
+				}
+			}
+		}
+
+		.title-holder,
+		.subtitle-holder {
+			color: $red;
+		}
+
+		.ico-text {
+			color: $dark-gray;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					background: url(../images/img-bg-10.svg) 50% top;
+					top: 35px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 5.5%;
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 39.2%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 45.3%;
+					left: 1%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: flex-start;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						margin: -1.86vw 0 0 1.24vw;
+					}
+
+					@include media('>=widescreen') {
+						margin: -27px 0 0 18px;
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				.ico-holder {
+					img {
+						@include media('>=phone') {
+							width: 18.01vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 263px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 75%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 12.67vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 184px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+
+				.item-holder {
+					@include media('<phone') {
+						flex-direction: column;
+						align-items: flex-end;
+						width: 100%;
+					}
+				}
+
+				.text-holder {
+					width: 50%;
+					padding: 20px 0 0 20px;
+
+					@include media('>=phone') {
+						position: absolute;
+						max-width: none;
+						width: auto;
+						width: 20.75vw;
+						padding: 0;
+						left: -10.43vw;
+						top: -14.78vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						width: 301px;
+						left: -151px;
+						top: -214px;
+					}
+				}
+			}
+		}
+
+		.bg-yellow {
+			color: $dark-gray;
+		}
+
+		.logos-list {
+			@include media('>=phone') {
+				margin: 0 -3.5vw;
+			}
+
+			@include media('>=widescreen') {
+				margin: 0 -36px;
+			}
+
+			li {
+				@include media('>=phone') {
+					padding: 0 3.5vw 1.86vw;
+				}
+
+				@include media('>=widescreen') {
+					padding: 0 36px 27px;
+				}
+			}
+		}
+	}
+
+	&.main-france {
+		color: #557a8f;
+		background: #c0c9d2;
+
+		&:after,
+		&:before {
+			border-color: $dark-green transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $dark-green transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $dark-green transparent;
+			}
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 182px;
+				height: 175px;
+				top: -30px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-france.svg) no-repeat top;
+				background-size: 182px 175px;
+
+				@include media('>=phone') {
+					width: 45.347vw;
+					height: 43.47vw;
+					right: 10%;
+					top: -6.1%;
+					left: auto;
+					background-size: 45.34vw 43.47vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 657px;
+					height: 630px;
+					background-size: 657px 630px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: 84px;
+						bottom: auto;
+						border-color: $red;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-06.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-06.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $red;
+					}
+				}
+			}
+		}
+
+		.title-holder,
+		.subtitle-holder {
+			color: $red;
+		}
+
+		.bg-light-blue {
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					background: url(../images/img-bg-15.svg) 50% top;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					top: 5%;
+					right: 8%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.73vw;
+						left: -28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 54px;
+						left: -414px;
+					}
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 38.5%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 44.5%;
+					left: 2%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: center;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				@include media('>=phone') {
+					top: 43%;
+					right: 1%;
+				}
+
+				.item-holder {
+					@include media('>=phone') {
+						align-items: flex-start;
+					}
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 20.12vw;
+						padding: 0 0 0 1.49vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 292px;
+						padding: 0 0 0 22px;
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 51.5%;
+					right: 0;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						margin: 0 -3.72vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						margin: 0 -54px 0 0;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 18.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 270px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					left: 24%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.42vw;
+						left: -14.91vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -180px;
+						left: -216px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 18.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 270px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 73.7%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: auto;
+						bottom: -7.45vw;
+					}
+
+					@include media('>=widescreen') {
+						bottom: -108px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 83.5%;
+				}
+			}
+
+			&:nth-child(20) {
+				@include media('>=phone') {
+					top: 91%;
+				}
+
+				.text-box {
+					@include media('>=phone') {
+						margin: 0 0 4.35vw;
+					}
+
+					@include media('>=widescreen') {
+						margin: 0 0 63px;
+					}
+				}
+			}
+		}
+
+		.ico-text,
+		#footer {
+			color: $white;
+		}
+	}
+
+	&.main-china {
+		color: #f8f1e2;
+		background: $red;
+
+		&:after,
+		&:before {
+			border-color: $dark-red transparent transparent transparent;
+		}
+
+		.main-holder {
+			&:after {
+				border-color: transparent $dark-red transparent transparent;
+			}
+
+			&:before {
+				left: 0;
+				border-color: transparent transparent $dark-red transparent;
+			}
+		}
+
+		.text-holder,
+		.title-holder,
+		.subtitle-holder {
+			color: inherit;
+		}
+
+		.image-map {
+			&.image-map-top {
+				width: 267px;
+				height: 173px;
+				top: -82px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(../images/img-map-china.svg) no-repeat top;
+				background-size: 267px 173px;
+
+				@include media('>=phone') {
+					width: 66.337vw;
+					height: 42.98vw;
+					top: -5.5%;
+					right: 2%;
+					left: auto;
+					background-size: 66.33vw 42.98vw;
+					transform: none;
+				}
+
+				@include media('>=widescreen') {
+					width: 961px;
+					height: 623px;
+					background-size: 961px 623px;
+				}
+
+				&:after {
+					@include media('<phone') {
+						top: 84px;
+						bottom: auto;
+						border-color: $dark-red;
+					}
+				}
+			}
+
+			&.image-map-bottom {
+				background: url(../images/img-map-05.svg) no-repeat top;
+
+				@include media('>=phone') {
+					background: url(../images/img-map-05.svg) no-repeat bottom;
+				}
+
+				&:after {
+					@include media('<phone') {
+						border-color: $dark-red;
+					}
+				}
+			}
+		}
+
+		.ico-text {
+			top: 10%;
+			color: inherit;
+		}
+
+		.text-box {
+			color: inherit;
+		}
+
+		.items-list {
+			&:after {
+				@include media('<phone') {
+					background: url(../images/img-bg-16.svg) 50% top;
+					top: 32px;
+				}
+			}
+		}
+
+		.item {
+			&:nth-child(2) {
+				@include media('>=phone') {
+					right: 3%;
+					top: 5%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 3.1vw;
+						left: -36.65vw;
+					}
+
+					@include media('>=widescreen') {
+						top:45px;
+						left: -531px;
+					}
+				}
+			}
+
+			&:nth-child(5) {
+				@include media('>=phone') {
+					left: 30.5%;
+				}
+			}
+
+			&:nth-child(6) {
+				@include media('>=phone') {
+					top: 29.8%;
+					right: 10%;
+				}
+			}
+
+			&:nth-child(7) {
+				@include media('>=phone') {
+					left: 9%;
+				}
+			}
+
+			&:nth-child(8) {
+				@include media('>=phone') {
+					top: 39%;
+				}
+			}
+
+			&:nth-child(9) {
+				@include media('>=phone') {
+					top: 45.5%;
+					left: 0;
+				}
+
+				.item-holder {
+					@include media('<phone') {
+						flex-direction: column;
+					}
+
+					@include media('>=phone') {
+						align-items: flex-start;
+					}
+				}
+
+				.text-holder {
+					&:nth-child(2) {
+						@include media('>=phone') {
+							position: absolute;
+							bottom: -4.0vw;
+							right: 11.55vw;
+						}
+
+						@include media('>=widescreen') {
+							bottom: -59px;
+							right: 167px;
+						}
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						margin: -4.09vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						margin: -59px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(10) {
+				padding: 0 0 60px;
+
+				@include media('>=phone') {
+					top: 42%;
+					right: 24%;
+					padding: 0;
+				}
+
+				.item-holder {
+					@include media('<phone') {
+						width: 75%;
+						padding: 0;
+					}
+				}
+
+				.text-holder {
+					position: absolute;
+					max-width: 100px;
+					bottom: 5px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					@include media('>=phone') {
+						max-width: 14.91vw;
+						bottom: 2.48vw;
+						padding: 0;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 216px;
+						bottom: 36px;
+					}
+				}
+
+				.ico-holder {
+					img {
+						width: 175px;
+
+						@include media('>=phone') {
+							width: 18.63vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 270px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(11) {
+				@include media('>=phone') {
+					top: 52.8%;
+					right: 3%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 29.81vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 432px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						margin: 3.11vw -1.74vw 0 0;
+					}
+
+					@include media('>=widescreen') {
+						margin: -45px -25px 0 0;
+					}
+				}
+			}
+
+			&:nth-child(12) {
+				@include media('>=phone') {
+					top: 53.5%;
+				}
+			}
+
+			&:nth-child(13) {
+				@include media('>=phone') {
+					top: 62.5%;
+					left: 16%;
+				}
+
+				.text-holder {
+					@include media('>=phone') {
+						max-width: 28.57vw;
+					}
+
+					@include media('>=widescreen') {
+						max-width: 414px;
+					}
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -12.05vw;
+						left: -14.66vw;
+					}
+
+					@include media('>=widescreen') {
+						top: -175px;
+						left: -212px;
+					}
+
+					img {
+						@include media('>=phone') {
+							width: 19.25vw;
+						}
+
+						@include media('>=widescreen') {
+							width: 279px;
+						}
+					}
+				}
+			}
+
+			&:nth-child(14) {
+				@include media('>=phone') {
+					top: 66%;
+				}
+			}
+
+			&:nth-child(16) {
+				@include media('>=phone') {
+					top: 71.8%;
+					left: 33%;
+					right: auto;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: -18.76vw;
+						right: -13.29vw;
+						left: auto;
+					}
+
+					@include media('>=widescreen') {
+						top: -272px;
+						right: -193px;
+					}
+				}
+			}
+
+			&:nth-child(17) {
+				@include media('>=phone') {
+					top: 74%;
+				}
+
+				.ico-holder {
+					@include media('>=phone') {
+						top: 17.39vw;
+					}
+
+					@include media('>=widescreen') {
+						top: 252px;
+					}
+				}
+			}
+
+			&:nth-child(18) {
+				@include media('>=phone') {
+					top: 84%;
+				}
+			}
+
+			&:nth-child(19) {
+				@include media('>=phone') {
+					top: 79.2%;
+				}
+			}
+		}
+
+		#footer {
+			color: $white;
+		}
+	}
+}
+
+.main-holder {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+
+	&:after,
+	&:before {
+		position: absolute;
+		content: '';
+		height: 0;
+		width: 0;
+		bottom: 0;
+		border-style: solid;
+		border-color: transparent $dark-green transparent transparent;
+		z-index: -1;
+	}
+
+	&:after {
+		right: 0;
+		border-width: 165px 240px 0 0;
+
+		@include media('>=phone') {
+			border-width: 260px 400px 0 0;
+		}
+
+		@include media('>=desktop') {
+			border-width: 685px 650px 0 0;
+		}
+
+		@include media('>=widescreen') {
+			border-width: 685px 750px 0 0;
+		}
+
+		@include media('>=lg-widescreen') {
+			border-width: 1223px 1114px 0 0;
+		}
+	}
+
+	&:before {
+		left: 0;
+		border-color: transparent transparent $dark-green transparent;
+		border-width: 0 55px 320px 0;
+
+		@include media('>=phone') {
+			border-width: 0 85px 520px 0;
+		}
+
+		@include media('>=desktop') {
+			border-width: 0 245px 1200px 0;
+		}
+
+		@include media('>=widescreen') {
+			border-width: 0 252px 2075px 0;
+		}
+	}
+}

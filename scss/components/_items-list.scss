@@ -1,0 +1,1016 @@
+.items-list {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	@include media('<phone') {
+		padding: 102px 0 200px;
+		min-height: 700px;
+	}
+
+	@include media('>=phone') {
+		position: absolute;
+	}
+
+	&:after {
+		@include media('<phone') {
+			@include absolute($top: 86px, $bottom: 183px, $left: 50%);
+			content: '';
+			width: 7px;
+			transform: translateX(-50%);
+			background: url(../images/img-bg-02.svg) 50% top;
+			background-repeat-x: no-repeat;
+			background-size: 7px;
+			z-index: -1;
+		}
+	}
+}
+
+.item {
+	@include media('<phone') {
+		display: flex;
+		padding: 0 0 60px;
+	}
+
+	@include media('>=phone') {
+		position: absolute;
+	}
+
+	&:nth-child(even) {
+		@include media('<phone') {
+			justify-content: flex-end;
+		}
+	}
+
+	&:nth-child(1) {
+		top: 0;
+		left: 0;
+
+		.item-holder {
+			@include media('<phone') {
+				padding-right: 20px;
+			}
+		}
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	&:nth-child(2) {
+		@include media('>=phone') {
+			top: 4.8%;
+			right: 2%;
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				padding-left: 52px;
+			}
+		}
+
+		.ico-holder {
+			position: absolute;
+			top: 17px;
+			left: -50px;
+
+			@include media('>=phone') {
+				top: 1.86vw;
+				left: -35vw;
+			}
+
+			@include media('>=widescreen') {
+				top: 27px;
+				left: -497px;
+			}
+
+			img {
+				width: 100px;
+
+				@include media('>=phone') {
+					width: 24.09vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 349px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(3) {
+		@include media('>=phone') {
+			left: 0;
+			top: 12.5%;
+		}
+
+		.ico-holder {
+			position: absolute;
+			bottom: -20px;
+			right: -110px;
+
+			@include media('>=phone') {
+				bottom: auto;
+				top: 2.73vw;
+				right: -25vw;
+
+				@include media('>=widescreen') {
+					top: 40px;
+					right: -385px;
+				}
+			}
+
+			img {
+				width: 70px;
+
+				@include media('>=phone') {
+					width: 15.15vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 220px;
+				}
+			}
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 49vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 684px;
+			}
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 60%;
+			}
+		}
+	}
+
+	&:nth-child(4) {
+		@include media('>=phone') {
+			top: 24.7%;
+			left: 0;
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 25.47vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 369px;
+			}
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 85%;
+			}
+		}
+	}
+
+
+	&:nth-child(5) {
+		padding: 0 0 10px;
+
+		@include media('>=phone') {
+			top: 24%;
+			left: 34%;
+			padding: 0;
+		}
+
+		.item-holder {
+			align-items: center;
+
+			@include media('<phone') {
+				padding-right: 20px;
+				flex-direction: column;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 19vw;
+				padding: 0 0 .62vw 1.24vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 268px;
+				padding: 0 0 9px 18px;
+			}
+		}
+
+		.ico-holder {
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 21.98vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 319px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(6) {
+		padding: 0 0 10px;
+
+		@include media('>=phone') {
+			top: 29.5%;
+			right: 6%;
+			padding: 0;
+		}
+
+		.item-holder {
+			display: flex;
+			align-items: center;
+			flex-direction: column-reverse;
+			padding-left: 20px;
+
+			@include media('>=phone') {
+				flex-direction: row-reverse;
+				padding-left: 0;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 13.45vw;
+				padding: 2.11vw 0 0 1.24vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 194px;
+				padding: 31px 0 0 18px;
+			}
+
+			p {
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+
+		.ico-holder {
+			@include media('<phone') {
+				margin: 0 0 15px;
+			}
+
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 18.13vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 263px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(7) {
+		padding: 0 0 45px;
+
+		@include media('>=phone') {
+			top: 35%;
+			left: 15%;
+			padding: 0;
+		}
+
+		.item-holder {
+			display: flex;
+			flex-direction: column-reverse;
+			text-align: center;
+			padding-right: 20px;
+
+			@include media('>=phone') {
+				text-align: left;
+				padding-right: 0;
+				flex-direction: row;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 17.15vw;
+				padding: 1.74vw 2.74vw 0 0;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 248px;
+				padding: 25px 40px 0 0;
+			}
+
+			p {
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+
+		.ico-holder {
+			@include media('<phone') {
+				margin: 0 0 15px;
+			}
+
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 19.75vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 286px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(8) {
+		padding: 0 0 35px;
+
+		@include media('>=phone') {
+			left: 0;
+			top: 39.7%;
+			padding: 0;
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 29vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 369px;
+			}
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 75%;
+			}
+		}
+	}
+
+	&:nth-child(9) {
+		padding-top: 100px;
+
+		@include media('>=phone') {
+			top: 44.8%;
+			left: 4%;
+			padding: 0;
+		}
+
+		.item-holder {
+			display: flex;
+			text-align: center;
+			padding-right: 20px;
+
+			@include media('>=phone') {
+				padding-right: 0;
+				flex-direction: row;
+				align-items: flex-end;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 20vw;
+				padding: 0 1.24vw 0 0;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 283px;
+				padding: 0 18px 0 0;
+			}
+		}
+
+		.ico-holder {
+			@include media('<phone') {
+				position: absolute;
+				right: -105px;
+				top: -100px;
+			}
+
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 13.79vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 200px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(10) {
+		padding: 0 0 10px;
+
+		@include media('>=phone') {
+			top: 43.6%;
+			right: 0;
+			padding: 0;
+		}
+
+		.item-holder {
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			padding-left: 20px;
+
+			@include media('>=phone') {
+				padding-left: 0;
+				flex-direction: row-reverse;
+				align-items: flex-end;
+			}
+		}
+
+		.text-holder {
+			padding: 0 0 15px;
+
+			@include media('>=phone') {
+				max-width: 23.6vw;
+				padding: 0 0 0 1.49vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 342px;
+				padding: 0 0 0 22px;
+			}
+
+			p {
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+
+		.ico-holder {
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 17.14vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 248px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(11) {
+		@include media('>=phone') {
+			top: 52.2%;
+			right: 7%;
+		}
+
+		.item-holder {
+			@include flex-reverse;
+			padding-right: 20px;
+
+			@include media('>=phone') {
+				padding: 0;
+				flex-direction: row-reverse;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 21.11vw;
+				padding: 0 0 0 3.11vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 306px;
+				padding: 0 0 0 45px;
+			}
+
+			p {
+				&:last-child {
+					@include media('<phone') {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.ico-holder {
+			padding: 0 0 15px;
+
+			@include media('>=phone') {
+				padding: 0;
+			}
+
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 15.65vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 227px;
+				}
+			}
+		}
+	}
+
+
+	&:nth-child(12) {
+		padding: 0 0 25px;
+
+		@include media('>=phone') {
+			left: 0;
+			top: 54%;
+			padding: 0;
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 29vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 369px;
+			}
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 75%;
+			}
+		}
+	}
+
+	&:nth-child(13) {
+		padding-top: 70px;
+
+		@include media('>=phone') {
+			top: 62.2%;
+			left: 30%;
+			padding: 0;
+		}
+
+		.item-holder {
+			@include flex-reverse;
+
+			@include media('>=phone') {
+				flex-direction: row-reverse;
+			}
+		}
+
+		.text-holder {
+			padding: 0 20px 0 0;
+
+			@include media('>=phone') {
+				max-width: 20.5vw;
+				padding: 0;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 297px;
+			}
+
+			p {
+				&:last-child {
+					@include media('<phone') {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.ico-holder {
+			position: absolute;
+			top: -70px;
+			right: -160px;
+
+			@include media('>=phone') {
+				top: -15.5vw;
+				left: -8.45vw;
+				right: auto;
+			}
+
+			@include media('>=widescreen') {
+				top: -205px;
+				left: -122px;
+			}
+
+			img {
+				width: 140px;
+
+				@include media('>=phone') {
+					width: 16.77vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 243px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(14) {
+		@include media('>=phone') {
+			left: 0;
+			top: 65%;
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 29vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 369px;
+			}
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 75%;
+			}
+		}
+	}
+
+	&:nth-child(15) {
+		padding: 0 0 10px;
+
+		@include media('>=phone') {
+			top: 62.6%;
+			right: 15%;
+			padding: 0;
+		}
+
+		.item-holder {
+			@include flex-reverse;
+			padding: 0 20px 0 0;
+
+			@include media('>=phone') {
+				flex-direction: row-reverse;
+				padding: 0;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 16.15vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 234px;
+			}
+
+			p {
+				&:last-child {
+					@include media('<phone') {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.ico-holder {
+			padding: 0 0 15px;
+
+			@include media('>=phone') {
+				position: absolute;
+				top: -23vw;
+				right: -14.9vw;
+				padding: 0;
+			}
+
+			@include media('>=widescreen') {
+				top: -324px;
+				right: -185px;
+			}
+
+			img {
+				width: 120px;
+
+				@include media('>=phone') {
+					width: 22.48vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 325px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(16) {
+		margin: -65px 0 0;
+		padding: 0 0 20px;
+
+		@include media('>=phone') {
+			top: 71%;
+			right: 12%;
+			margin: 0;
+		}
+
+		.item-holder {
+			@include flex-reverse;
+			padding: 0 0 0 20px;
+
+			@include media('>=phone') {
+				flex-direction: row-reverse;
+				padding: 0;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 18.01vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 261px;
+			}
+
+			p {
+				&:last-child {
+					@include media('<phone') {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.ico-holder {
+			padding: 0 0 15px;
+
+			@include media('>=phone') {
+				position: absolute;
+				top: -18vw;
+				left: -12.42vw;
+				padding: 0;
+			}
+
+			@include media('>=widescreen') {
+				top: -234px;
+				left: -180px;
+			}
+
+			img {
+				width: 100px;
+
+				@include media('>=phone') {
+					width: 10.68vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 155px;
+				}
+			}
+		}
+	}
+
+	&:nth-child(17) {
+		padding: 125px 0 20px;
+
+		@include media('>=phone') {
+			top: 77.3%;
+			right: 0;
+			padding: 0;
+		}
+
+
+		.item-holder {
+			flex-direction: column;
+			padding: 0 20px 0 0;
+
+			@include media('>=phone') {
+				max-width: 20.25vw;
+				padding: 0;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 293px;
+			}
+		}
+
+		.ico-holder {
+			position: absolute;
+			top: -125px;
+			right: -35px;
+
+			@include media('>=phone') {
+				top: 4.1vw;
+				left: -23.6vw;
+				transform: translateY(-75%);
+				right: auto;
+			}
+
+			@include media('>=widescreen') {
+				left: -342px;
+				top: 33px;
+			}
+
+			img {
+				width: 160px;
+
+				@include media('>=phone') {
+					width: 22.11vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 322px;
+				}
+			}
+		}
+
+		.text-holder {
+			max-width: none;
+			margin: 0;
+			padding: 0 0 15px;
+
+			@include media('>=phone') {
+				padding: 0 0 1.86vw;
+			}
+
+			@include media('>=widescreen') {
+				padding: 0 0 15px;
+			}
+		}
+	}
+
+	&:nth-child(18) {
+		@include media('>=phone') {
+			top: 80.3%;
+			right: 23.2%;
+		}
+
+		.item-holder {
+			display: flex;
+			align-items: start;
+
+			@include media('<phone') {
+				width: 65%;
+			}
+
+			@include media('>=phone') {
+				padding: 0;
+			}
+		}
+
+		.text-holder {
+			@include media('>=phone') {
+				max-width: 24vw;
+				padding: 0 0 0 1.86vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 337px;
+				padding: 0 0 0 27px;
+			}
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 19vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 252px;
+			}
+		}
+	}
+
+	&:nth-child(19) {
+		padding: 0 0 215px;;
+
+		@include media('>=phone') {
+			left: 0;
+			top: 78.2%;
+			padding: 0;
+		}
+
+		.ico-holder {
+			position: absolute;
+			bottom: -170px;
+			right: -40px;
+
+			@include media('>=phone') {
+				top: 15vw;
+				right: -22vw;
+				bottom: auto;
+			}
+
+			@include media('>=widescreen') {
+				top: 234px;
+				right: -351px;
+			}
+
+			img {
+				width: 150px;
+
+				@include media('>=phone') {
+					width: 19.38vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 281px;
+				}
+			}
+		}
+
+		.text-box {
+			@include media('>=phone') {
+				max-width: 25.47vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 369px;
+			}
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 85%;
+			}
+		}
+	}
+
+	&:nth-child(20) {
+		padding: 0 0 20px;
+
+		@include media('>=phone') {
+			top: 91.7%;
+			right: 9%;
+			padding: 0;
+		}
+
+		@include media('>=widescreen') {
+			right: 14%;
+		}
+
+		.item-holder {
+			@include media('<phone') {
+				width: 100%;
+				align-items: center;
+			}
+			@include media('>=phone') {
+				max-width: 50vw;
+
+			}
+
+			@include media('>=widescreen') {
+				max-width: 648px;
+			}
+		}
+
+		.text-box {
+			width: calc(50% - 20px);
+			margin: 0 20px 0 0;
+
+			@include media('>=phone') {
+				width: auto;
+				max-width: 50vw;
+				margin: 0 0 2.85vw;
+			}
+
+			@include media('>=widescreen') {
+				max-width: 648px;
+				margin: 0 0 41px;
+			}
+		}
+
+		.logos-list {
+			@include media('<phone') {
+				width: calc(50% - 20px);
+				margin: 0 0 0 20px;
+			}
+		}
+	}
+}
+
+.text-holder {
+	width: 100%;
+}
+
+.item-holder {
+	position: relative;
+
+	@include media('<phone') {
+		display: flex;
+		width: 50%;
+		justify-content: center;
+	}
+}

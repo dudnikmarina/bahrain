@@ -1,0 +1,1612 @@
+.logos-list {
+	@extend %listreset;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+	@include media('>=phone') {
+		margin: 0 -2.5vw;
+	}
+
+	@include media('>=widescreen') {
+		margin: 0 -27px;
+	}
+
+	li {
+		padding: 0 15px 10px;
+
+		@include media('>=phone') {
+			padding: 0 2.5vw 1.86vw;
+		}
+
+		@include media('>=widescreen') {
+			padding: 0 27px 27px;
+		}
+	}
+
+	a {
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.logo-aws {
+	img {
+		width: 38px;
+		height: 28px;
+
+		@include media('>=phone') {
+			width: 3.47vw;
+			height: 2.23vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 50px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-american-express {
+	img {
+		width: 37px;
+		height: 37px;
+
+		@include media('>=phone') {
+			width: 3.35vw;
+			height: 3.35vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 49px;
+			height: 49px;
+		}
+	}
+}
+
+.logo-citi{
+	img {
+		width: 20px;
+		height: 29px;
+
+		@include media('>=phone') {
+			width: 3.85vw;
+			height: 2.46vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 54px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-cisco {
+	img {
+		width: 43px;
+		height: 29px;
+
+		@include media('>=phone') {
+			width: 5.09vw;
+			height: 3.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 59px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-deloitte {
+	img {
+		width: 64px;
+		height: 19px;
+
+		@include media('>=phone') {
+			width: 7.46vw;
+			height: 2.12vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 97px;
+			height: 16px;
+		}
+	}
+}
+
+.logo-mondelez {
+	img {
+		width: 60px;
+		height: 22px;
+
+		@include media('>=phone') {
+			width: 9.07vw;
+			height: 1.49vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 90px;
+			height: 22px;
+		}
+	}
+}
+
+.logo-microsoft {
+	img {
+		width: 83px;
+		height: 26px;
+
+		@include media('>=phone') {
+			width: 9.07vw;
+			height: 1.99vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 131px;
+			height: 29px;
+		}
+	}
+}
+
+.logo-sabre {
+	img {
+		width: 56px;
+		height: 22px;
+
+		@include media('>=phone') {
+			width: 5.71vw;
+			height: 1.49vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 83px;
+			height: 22px;
+		}
+	}
+}
+
+.logo-schlumberger {
+	img {
+		width: 61px;
+		height: 20px;
+
+		@include media('>=phone') {
+			width: 6.33vw;
+			height: 1.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 92px;
+			height: 18px;
+		}
+	}
+}
+
+.logo-tobaco{
+	img {
+		width: 52px;
+		height: 32px;
+
+		@include media('>=phone') {
+			width: 5.21vw;
+			height: 2.73vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 76px;
+			height: 40px;
+		}
+	}
+}
+
+.logo-unileve {
+	img {
+		width: 35px;
+		height: 27px;
+
+		@include media('>=phone') {
+			width: 3.11vw;
+			height: 3.35vw
+		}
+
+		@include media('>=widescreen') {
+			width: 45px;
+			height: 49px;
+		}
+	}
+}
+
+.logo-boots{
+	img {
+		width: 48px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 4.72vw;
+			height: 2.86vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 68px;
+			height: 41px;
+		}
+	}
+}
+
+.logo-bupa {
+	img {
+		width: 60px;
+		height: 34px;
+
+		@include media('>=phone') {
+			width: 6.22vw;
+			height: 2.98vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 90px;
+			height: 43px;
+		}
+	}
+}
+
+.logo-ey {
+	img {
+		width: 35px;
+		height: 34px;
+
+		@include media('>=phone') {
+			width: 3.11vw;
+			height: 2.98vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 45px;
+			height: 43px;
+		}
+	}
+}
+
+.logo-hsbc {
+	img {
+		width: 56px;
+		height: 20px;
+
+		@include media('>=phone') {
+			width: 5.71vw;
+			height: 1.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 83px;
+			height: 18px;
+		}
+	}
+}
+
+.logo-mclaren {
+	img {
+		width: 91px;
+		height: 24px;
+
+		@include media('>=phone') {
+			width: 10.06vw;
+			height: 1.74vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 145px;
+			height: 25px;
+		}
+	}
+}
+
+.logo-mott-macdonald{
+	img {
+		width: 40px;
+		height: 35px;
+
+		@include media('>=phone') {
+			width: 3.72vw;
+			height: 3.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 54px;
+			height: 45px;
+		}
+	}
+}
+
+.logo-pwc {
+	img {
+		width: 45px;
+		height: 36px;
+
+		@include media('>=phone') {
+			width: 4.35vw;
+			height: 3.23vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 63px;
+			height: 47px;
+		}
+	}
+}
+
+.logo-standart-chartered {
+	img {
+		width: 54px;
+		height: 26px;
+
+		@include media('>=phone') {
+			width: 5.47vw;
+			height: 1.99vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 79px;
+			height: 29px;
+		}
+	}
+}
+
+.logo-rsa {
+	img {
+		width: 48px;
+		height: 29px;
+
+		@include media('>=phone') {
+			width: 4.71vw;
+			height: 2.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 68px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-cluttons {
+	img {
+		width: 58px;
+		height: 17px;
+
+		@include media('>=phone') {
+			width: 5.96vw;
+			height: 0.87vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 86px;
+			height: 13px;
+		}
+	}
+}
+
+.logo-dtz{
+	img {
+		width: 54px;
+		height: 22px;
+
+		@include media('>=phone') {
+			width: 5.47vw;
+			height: 1.49vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 79px;
+			height: 22px;
+		}
+	}
+}
+
+.logo-al-futtaim {
+	img {
+		width: 101px;
+		height: 31px;
+
+		@include media('>=phone') {
+			width: 10.06vw;
+			height: 1.37vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 146px;
+			height: 20px;
+		}
+	}
+}
+
+.logo-national-bank {
+	img {
+		width: 80px;
+		height: 35px;
+
+		@include media('>=phone') {
+			width: 7.45vw;
+			height: 1.86vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 108px;
+			height: 27px;
+		}
+	}
+}
+
+.logo-airabia {
+	img {
+		width: 84px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 7.95vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 115px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-mashreq{
+	img {
+		width: 107px;
+		height: 43px;
+
+		@include media('>=phone') {
+			width: 9.57vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 138px;
+			height: 23.4px;
+		}
+	}
+}
+
+.logo-rotana {
+	img {
+		width: 58px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 4.72vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 68px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-altamimi {
+	img {
+		width: 84px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 7.95vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 115px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-ziraat-bankasi {
+	img {
+		width: 80px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 7.45vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 108px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-kuveyt-turk {
+	img {
+		width: 60px;
+		height: 45px;
+
+		@include media('>=phone') {
+			width: 4.97vw;
+			height: 3.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 72px;
+			height: 45px;
+		}
+	}
+}
+
+.logo-yapi-kredi {
+	img {
+		width: 77px;
+		height: 28px;
+
+		@include media('>=phone') {
+			width: 7.08vw;
+			height: 0.99vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 103px;
+			height: 15px;
+		}
+	}
+}
+
+.logo-vakif-bank {
+	img {
+		width: 83px;
+		height: 28px;
+
+		@include media('>=phone') {
+			width: 7.82vw;
+			height: 0.99vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 113px;
+			height: 15px;
+		}
+	}
+}
+
+.logo-finansbank {
+	img {
+		width: 85px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 6.83vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 99px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-halkbank {
+	img {
+		width: 80px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 7.45vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 108px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-denizbank {
+	img {
+		width: 80px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 6.21vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 99px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-ing {
+	img {
+		width: 65px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 5.6vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 81px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-turkiye-bankasi {
+	img {
+		width: 80px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 7.45vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 108px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-hyundai {
+	img {
+		width: 77px;
+		height: 35px;
+
+		@include media('>=phone') {
+			width: 7.08vw;
+			height: 1.86vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 103px;
+			height: 27px;
+		}
+	}
+}
+
+.logo-samsung {
+	img {
+		width: 72px;
+		height: 29px;
+
+		@include media('>=phone') {
+			width: 6.46vw;
+			height: 2.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 94px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-hana-bank {
+	img {
+		width: 105px;
+		height: 37px;
+
+		@include media('>=phone') {
+			width: 10.56vw;
+			height: 2.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 153px;
+			height: 31px;
+		}
+	}
+}
+
+.logo-cable-system {
+	img {
+		width: 90px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 8.7vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 126px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-ascott {
+	img {
+		width: 58px;
+		height:50px;
+
+		@include media('>=phone') {
+			width: 4.72vw;
+			height: 3.73vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 68px;
+			height: 54px;
+		}
+	}
+}
+
+.logo-breadtalk {
+	img {
+		width: 69px;
+		height: 33px;
+
+		@include media('>=phone') {
+			width: 6.09vw;
+			height: 1.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 88px;
+			height: 23px;
+		}
+	}
+}
+
+.logo-charles-keith {
+	img {
+		width: 125px;
+		height: 17px;
+
+		@include media('>=phone') {
+			width:14.29vw;
+			height: 0.87vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 207px;
+			height: 13px;
+		}
+	}
+}
+
+.logo-etonhouse {
+	img {
+		width: 80px;
+		height: 31px;
+
+		@include media('>=phone') {
+			width: 7.45vw;
+			height: 1.37vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 108px;
+			height: 20px;
+		}
+	}
+}
+
+.logo-metnhardt {
+	img {
+		width: 73px;
+		height: 30px;
+
+		@include media('>=phone') {
+			width: 6.58vw;
+			height: 1.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 95px;
+			height: 18px;
+		}
+	}
+}
+
+.logo-mtq {
+	img {
+		width: 55px;
+		height: 35px;
+
+		@include media('>=phone') {
+			width: 4.35vw;
+			height: 1.86vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 63px;
+			height: 27px;
+		}
+	}
+}
+
+.logo-pico {
+	img {
+		width: 67px;
+		height: 39px;
+
+		@include media('>=phone') {
+			width: 5.84vw;
+			height: 2.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 85px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-jgc {
+	img {
+		width: 58px;
+		height: 45px;
+
+		@include media('>=phone') {
+			width: 4.72vw;
+			height: 3.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 68px;
+			height: 45px;
+		}
+	}
+}
+
+.logo-ncb {
+	img {
+		width: 85px;
+		height: 39px;
+
+		@include media('>=phone') {
+			width: 8.07vw;
+			height: 2.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 117px;
+			height: 34px;
+		}
+	}
+}
+
+.logo-apicorp {
+	img {
+		width:45px;
+		height: 63px;
+
+		@include media('>=phone') {
+			width: 3.11vw;
+			height: 5.34vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 45px;
+			height: 77px;
+		}
+	}
+}
+
+.logo-saico {
+	img {
+		width: 130px;
+		height: 42px;
+
+		@include media('>=phone') {
+			width: 13.66vw;
+			height: 2.73vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 198px;
+			height: 40px;
+		}
+	}
+}
+
+.logo-saudibinladingroup {
+	img {
+		width: 95px;
+		height: 60px;
+
+		@include media('>=phone') {
+			width: 9.31vw;
+			height: 4.97vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 135px;
+			height: 72px;
+		}
+	}
+}
+
+.logo-maybank {
+	img {
+		width: 87px;
+		height: 28px;
+
+		@include media('>=phone') {
+			width: 7.08vw;
+			height: 2.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 157px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-cimbgroup {
+	img {
+		width: 120px;
+		height: 28px;
+
+		@include media('>=phone') {
+			width: 12.42vw;
+			height: 2.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 198px;
+			height: 32.4px;
+		}
+	}
+}
+
+.logo-malakoff {
+	img {
+		width: 107px;
+		height: 35px;
+
+		@include media('>=phone') {
+			width: 10.81vw;
+			height: 1.74vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 157px;
+			height: 27px;
+		}
+	}
+}
+
+.logo-toyota {
+	img {
+		width: 116px;
+		height: 24px;
+
+		@include media('>=phone') {
+			width: 13.17vw;
+			height: 1.74vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 191px;
+			height: 25px;
+		}
+	}
+}
+
+.logo-mitsubishi {
+	img {
+		width: 50px;
+		height: 53px;
+
+		@include media('>=phone') {
+			width: 4.97vw;
+			height: 5.34vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 72px;
+			height: 77px;
+		}
+	}
+}
+
+.logo-nomura {
+	img {
+		width: 100px;
+		height: 32px;
+
+		@include media('>=phone') {
+			width: 9.94vw;
+			height: 1.49vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 144px;
+			height: 22px;
+		}
+	}
+}
+
+.logo-daiwa{
+	img {
+		width: 78px;
+		height: 38px;
+
+		@include media('>=phone') {
+			width: 7.2vw;
+			height: 2.34vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 104px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-sumitomo {
+	img {
+		width: 120px;
+		height: 21px;
+
+		@include media('>=phone') {
+			width: 13.66vw;
+			height: 1.37vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 198px;
+			height: 20px;
+		}
+	}
+}
+
+.logo-mufg {
+	img {
+		width: 85px;
+		height: 45px;
+
+		@include media('>=phone') {
+			width: 8.07vw;
+			height: 3.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 117px;
+			height: 47px;
+		}
+	}
+}
+
+.logo-vomm {
+	img {
+		width: 72px;
+		height: 41px;
+
+		@include media('>=phone') {
+			width: 6.46vw;
+			height: 2.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 94px;
+			height: 38px;
+		}
+	}
+}
+
+.logo-simeco {
+	img {
+		width: 77px;
+		height: 41px;
+
+		@include media('>=phone') {
+			width: 7.08vw;
+			height: 2.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 103px;
+			height: 38px;
+		}
+	}
+}
+
+.logo-prysmian-group {
+	img {
+		width: 69px;
+		height: 37px;
+
+		@include media('>=phone') {
+			width: 6.09vw;
+			height: 2.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 88.2px;
+			height: 30.6px;
+		}
+	}
+}
+
+.logo-ariston {
+	img {
+		width: 91px;
+		height: 32px;
+
+		@include media('>=phone') {
+			width: 8.82vw;
+			height: 1.49vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 128px;
+			height: 22px;
+		}
+	}
+}
+
+.logo-tata {
+	img {
+		width: 58px;
+		height: 55px;
+
+		@include media('>=phone') {
+			width: 4.72vw;
+			height: 4.35vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 68px;
+			height: 63px;
+		}
+	}
+}
+
+.logo-icicibank {
+	img {
+		width: 102px;
+		height: 38px;
+
+		@include media('>=phone') {
+			width: 10.19vw;
+			height: 2.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 148px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-statebank {
+	img {
+		width: 85px;
+		height: 45px;
+
+		@include media('>=phone') {
+			width: 8.07vw;
+			height: 3.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 117px;
+			height: 45px;
+		}
+	}
+}
+
+.logo-mindteck {
+	img {
+		width: 98px;
+		height:38px;
+
+		@include media('>=phone') {
+			width: 9.69vw;
+			height: 2.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 140px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-electrosteel {
+	img {
+		width: 108px;
+		height: 38px;
+
+		@include media('>=phone') {
+			width: 10.93vw;
+			height: 2.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 158px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-bankofbaroda {
+	img {
+		width: 102px;
+		height: 36px;
+
+		@include media('>=phone') {
+			width: 11.43vw;
+			height: 3.23vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 166px;
+			height: 47px;
+		}
+	}
+}
+
+.logo-cathaypacific {
+	img {
+		width: 122px;
+		height: 34px;
+
+		@include media('>=phone') {
+			width: 12.67vw;
+			height: 1.74vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 184px;
+			height: 25px;
+		}
+	}
+}
+
+.logo-nest {
+	img {
+		width: 78px;
+		height: 37px;
+
+		@include media('>=phone') {
+			width: 7.2vw;
+			height: 2.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 104px;
+			height: 31px;
+		}
+	}
+}
+
+.logo-brinc {
+	img {
+		width: 65px;
+		height: 36px;
+
+		@include media('>=phone') {
+			width: 5.59vw;
+			height: 1.99vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 81px;
+			height: 29px;
+		}
+	}
+}
+
+.logo-basf {
+	img {
+		width: 80px;
+		height: 40px;
+
+		@include media('>=phone') {
+			width: 7.45vw;
+			height: 2.48vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 108px;
+			height: 36px;
+		}
+	}
+}
+
+.logo-dhl {
+	img {
+		width: 77px;
+		height: 31px;
+
+		@include media('>=phone') {
+			width: 7.08vw;
+			height: 1.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 103px;
+			height: 20px;
+		}
+	}
+}
+
+.logo-allianz {
+	img {
+		width: 91px;
+		height: 38px;
+
+		@include media('>=phone') {
+			width: 8.81vw;
+			height: 2.23vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 128px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-armacell {
+	img {
+		width: 86px;
+		height: 31px;
+
+		@include media('>=phone') {
+			width: 8.19vw;
+			height: 1.36vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 119px;
+			height: 20px;
+		}
+	}
+}
+
+.logo-deutschebank {
+	img {
+		width: 94px;
+		height: 36px;
+
+		@include media('>=phone') {
+			width: 9.19vw;
+			height: 1.98vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 133px;
+			height: 29px;
+		}
+	}
+}
+
+.logo-lufthansa-technik {
+	img {
+		width: 84px;
+		height: 41px;
+
+		@include media('>=phone') {
+			width: 7.95vw;
+			height: 2.61vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 115px;
+			height: 38px;
+		}
+	}
+}
+
+.logo-bnpparibas {
+	img {
+		width: 83px;
+		height: 36px;
+
+		@include media('>=phone') {
+			width: 7.83vw;
+			height: 1.99vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 113px;
+			height: 29px;
+		}
+	}
+}
+
+.logo-gdfsvez {
+	img {
+		width: 83px;
+		height: 34px;
+
+		@include media('>=phone') {
+			width: 7.83vw;
+			height: 1.74vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 113px;
+			height: 25px;
+		}
+	}
+}
+
+.logo-axa {
+	@include media('>=phone') {
+		margin: -2.48vw 0 0;
+	}
+	@include media('>=widescreen') {
+		margin: -36px 0 0;
+	}
+
+	img {
+		width: 64px;
+		height: 57px;
+
+		@include media('>=phone') {
+			width: 5.47vw;
+			height: 4.59vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 79px;
+			height: 67px;
+		}
+	}
+}
+
+.logo-credit-agricole {
+	img {
+		width: 90px;
+		height: 34px;
+
+		@include media('>=phone') {
+			width: 8.69vw;
+			height: 1.74vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 126px;
+			height: 25px;
+		}
+	}
+}
+
+.logo-chinacomservice {
+	img {
+		width: 58px;
+		height: 50px;
+
+		@include media('>=phone') {
+			width: 5.96vw;
+			height: 4.97vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 86px;
+			height: 72px;
+		}
+	}
+}
+
+.logo-huawei {
+	img {
+		width: 85px;
+		height: 28px;
+
+		@include media('>=phone') {
+			width: 9.32vw;
+			height: 2.24vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 135px;
+			height: 32px;
+		}
+	}
+}
+
+.logo-bankofchina {
+	img {
+		width: 90px;
+		height: 34px;
+
+		@include media('>=phone') {
+			width: 9.94vw;
+			height: 2.98vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 144px;
+			height: 43px;
+		}
+	}
+}
+
+.logo-chec {
+	img {
+		width: 50px;
+		height: 30px;
+
+		@include media('>=phone') {
+			width: 4.97vw;
+			height: 2.48vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 72px;
+			height: 36px;
+		}
+	}
+}
+
+.logo-cpic {
+	img {
+		width: 77px;
+		height: 30px;
+
+		@include media('>=phone') {
+			width: 8.32vw;
+			height: 2.48vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 120px;
+			height: 36px;
+		}
+	}
+}
+
+.logo-cimc {
+	img {
+		width: 87px;
+		height: 25px;
+
+		@include media('>=phone') {
+			width: 9.56vw;
+			height: 1.86vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 138px;
+			height: 27px;
+		}
+	}
+}
+
+.logo-jinluowater {
+	img {
+		width: 67px;
+		height: 35px;
+
+		@include media('>=phone') {
+			width: 7.08vw;
+			height: 3.11vw;
+		}
+
+		@include media('>=widescreen') {
+			width:102px;
+			height: 45px;
+		}
+	}
+}
+
+
+
+
+
+

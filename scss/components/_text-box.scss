@@ -1,0 +1,113 @@
+.text-box {
+	position: relative;
+	color: inherit;
+	background: $white;
+	padding: 10px;
+	z-index: 1;
+
+	@include media('>=phone') {
+		padding: 1.73vw;
+	}
+
+	@include media('>=widescreen') {
+		padding: 25px;
+	}
+
+	&:before,
+	&:after {
+		position: absolute;
+		content: '';
+		top: -1px;
+		bottom: -1px;
+		left: -1px;
+		right: -1px;
+		z-index: -1;
+	}
+
+	&:before {
+		background: url(../images/img-style-02.png) repeat-y 0 0 / 3px, url(../images/img-style-01.png) repeat-x 0 0 / 8px;
+	}
+
+	&:after {
+		background: url(../images/img-style-02.png) repeat-y top right / 3px, url(../images/img-style-01.png) repeat-x bottom right / 8px;
+	}
+
+	&.bg-dark-blue {
+		color: $white;
+		background: $dark-blue;
+	}
+
+	&.bg-green {
+		color: $white;
+		background: $green;
+	}
+
+	&.bg-dark-green {
+		color: $white;
+		background: $dark-green;
+	}
+
+	&.bg-red {
+		color: $white;
+		background: $red;
+	}
+
+	&.bg-red {
+		color: $white;
+		background: $red;
+	}
+
+	&.bg-dark-red {
+		color: $white;
+		background: $dark-red;
+	}
+
+	&.bg-blue {
+		color: $white;
+		background: $blue;
+	}
+
+	&.bg-cyan {
+		color: $white;
+		background: $cyan;
+	}
+
+	&.bg-yellow {
+		background: $yellow;
+	}
+
+	&.bg-orange {
+		background: $orange;
+	}
+
+	&.bg-light-blue {
+		color: $white;
+		background: $light-blue;
+	}
+
+	p {
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	a {
+		font-weight: 800;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.title-box {
+	display: block;
+	font-weight: 800;
+	margin: 0 0 2px;
+
+	@include media('>=widescreen') {
+		margin: 0 0 4px;
+	}
+}
+

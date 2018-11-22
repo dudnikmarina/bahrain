@@ -1,0 +1,83 @@
+.content-holder {
+	position: relative;
+
+	@include media('>=phone') {
+		padding: 0 0 36vw;
+	}
+
+	@include media('>=widescreen') {
+		padding: 0 0 461px;
+	}
+
+	.image-map {
+		position: absolute;
+		margin: 0;
+		z-index: -1;
+
+		&:after {
+			@include media('<phone') {
+				position: absolute;
+				content: '';
+				width: 35px;
+				height: 35px;
+				left: 50%;
+				top: 60px;
+				transform: translateX(-50%);
+				border-radius: 50%;
+				border: 6px solid $white;
+			}
+		}
+
+		&.image-map-bottom {
+			width: 115px;
+			height: 200px;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background: url(../images/img-map-01.svg) no-repeat top;
+			background-size: 115px 200px;
+
+			@include media('>=phone') {
+				width: 29.19vw;
+				height: 51.5vw;
+				bottom: 0;
+				left: 5%;
+				background: url(../images/img-map-01.svg) no-repeat bottom;
+				background-size: 29.19vw 51.5vw;
+				transform: none;
+			}
+
+			@include media('>=widescreen') {
+				width: 423px;
+				height: 739px;
+				left: 54px;
+				bottom: -43px;
+				background-size: 423px 739px;
+			}
+
+			&:after {
+				@include media('<phone') {
+					top: 15px;
+				}
+			}
+		}
+	}
+}
+
+.image-content {
+	@include media('<phone') {
+		display: none;
+	}
+
+	img {
+		display: block;
+
+		@include media('>=phone') {
+			width: 93.78vw;
+		}
+
+		@include media('>=widescreen') {
+			width: 1360px;
+		}
+	}
+}

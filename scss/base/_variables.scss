@@ -1,0 +1,63 @@
+// Colors
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+$gray: #d4d8d8;
+$dark-gray: #414042;
+$black: #000;
+$white: #fff;
+$light-blue: #90a6b5;
+$blue: #00679a;
+$dark-blue: #0b2746;
+$cyan: #79c7c8;
+$green: #0c7c80;
+$dark-green: #304f65;
+$red: #ee2f48;
+$dark-red: #9a1648;
+$yellow: #fcda2b;
+$orange: #f26950;
+
+$base-font-serif: 'Martel', 'Times New Roman', 'Times', 'Georgia', serif;
+$secondary-font-serif: 'Roboto Slab', 'Times New Roman', 'Times', serif;
+// This is the default html and body font-size for the base rem value.
+$rem-base: 13px;
+
+// Body
+$base-text-color: $black !default;
+$base-background-color: $white !default;
+$font-size-base: 14px !default;
+$line-height-base: 1.3 !default;
+$base-font-family: $base-font-serif !default;
+
+$vertical-rhythm: ($line-height-base * 1em);
+
+$base-min-width: 320px;
+
+// Liks
+$base-link-color: inherit;
+
+// Buttons
+$btn-color: $white !default;
+$btn-background: $black !default;
+$btn-padding: 0.4em 0.7em !default;
+$btn-font-size: inherit !default;
+
+// Forms
+$form-element-padding: $btn-padding !default;
+$form-element-border-color: $gray !default;
+$form-element-focus-border-color: $black !default;
+$placeholder-color: $gray !default;
+
+// Headers
+$h1-font-size: 25px !default;
+$h2-font-size: 20px !default;
+$h3-font-size: 19px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 17px !default;
+$h6-font-size: 15px !default;
+
+$headings-font-family: $secondary-font-serif !default;
+$headings-color: inherit !default;
+
+
+$animation-speed: 0.3s;

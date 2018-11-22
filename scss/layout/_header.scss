@@ -1,0 +1,59 @@
+#header {
+	padding: 25px 0;
+
+	@include media('>=phone') {
+		padding: 9.06vw 0 6.95vw;
+	}
+
+	@include media('>=widescreen') {
+		padding: 131px 0 101px;
+	}
+}
+
+.logos-header {
+	@extend %listreset;
+	display: flex;
+	align-items: center;
+	margin: 0 -9px;
+
+	@include media('>=widescreen') {
+		margin: 0 -16px;
+	}
+
+	li {
+		margin: 0 9px;
+
+		&:first-child {
+			img {
+				width: 45px;
+
+				@include media('>=phone') {
+					width: 8.19vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 119px;
+					margin: 0 16px;
+				}
+			}
+		}
+
+		&:last-child {
+			img {
+				width: 70px;
+
+				@include media('>=phone') {
+					width: 11.92vw;
+				}
+
+				@include media('>=widescreen') {
+					width: 173px;
+				}
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
